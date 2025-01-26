@@ -1,0 +1,65 @@
+### Note: DO NOT use quantized model or quantization_bit when merging lora adapters
+
+### model
+# model_name_or_path: Qwen/Qwen2.5-32B-Instruct
+# adapter_name_or_path: /home/ubuntu/lshu/lora_train/ckpt/Sky-T1-32B-lora-64-code/full/original
+# template: qwen25
+# finetuning_type: lora
+
+# ### export
+# export_dir: /home/ubuntu/lshu/lora_train/ckpt/Sky-T1-32B-lora-64-code/full/merged
+# export_size: 2
+# export_device: cpu
+# export_legacy_format: false
+
+# 2k data code and math 
+# model_name_or_path: Qwen/Qwen2.5-32B-Instruct
+# adapter_name_or_path: /home/ubuntu/lshu/lora_train/ckpt/Sky-T1-32B-lora-64-2k-code-math/full/original
+# template: qwen25
+# finetuning_type: lora
+
+# ### export
+# export_dir: /home/ubuntu/lshu/lora_train/ckpt/Sky-T1-32B-lora-64-2k-code-math/full/merged
+# export_size: 2
+# export_device: cpu
+# export_legacy_format: false
+
+# 4k data code and math
+# model_name_or_path: Qwen/Qwen2.5-32B-Instruct
+# adapter_name_or_path: /home/ubuntu/lshu/lora_train/ckpt/Sky-T1-32B-lora-64-4k-code-math/full/original
+# template: qwen25
+# finetuning_type: lora
+
+# ### export
+# export_dir: /home/ubuntu/lshu/lora_train/ckpt/Sky-T1-32B-lora-64-4k-code-math/full/merged
+# export_size: 2
+# export_device: cpu
+# export_legacy_format: false
+
+# 5k distilled code and math 
+# /home/ubuntu/lshu/lora_train/ckpt/Sky-T1-32B-lora-64-distill-5k-code-math/full/original
+# model_name_or_path: Qwen/Qwen2.5-32B-Instruct
+
+# model_name_or_path: Qwen/Qwen2.5-Math-7B
+# adapter_name_or_path: /home/ubuntu/lshu/lora_train/ckpt/Sky-T1-32B-lora-64-distill-5k-7b/full/original
+# template: qwen25
+# finetuning_type: lora
+
+# ### export
+# export_dir: /home/ubuntu/lshu/lora_train/ckpt/Sky-T1-32B-lora-64-distill-5k-7b/full/merged
+# export_size: 2
+# export_device: cpu
+# export_legacy_format: false
+
+
+# r1-17k
+model_name_or_path: Qwen/Qwen2.5-32B-Instruct
+adapter_name_or_path: /home/ubuntu/lshu/lora_train/ckpt/Sky-T1-32B-lora-r1-final/full/original
+template: qwen25
+finetuning_type: lora
+
+### export
+export_dir: /home/ubuntu/lshu/lora_train/ckpt/Sky-T1-32B-lora-r1-final/full/merged
+export_size: 2
+export_device: cpu
+export_legacy_format: false
