@@ -1,0 +1,5 @@
+python eval.py --model open-thoughts/OpenThinker-7B --evals=aime,math500,amc23,olympiadbench --tp=4 --temperatures 0 --output_file=results_openthinker_7B.txt
+python eval.py --model /root/lshu/SkyThought/ckpt/global_step_59 --evals=aime,math500,amc23,olympiadbench --tp=4 --temperatures 0  --output_file=results_step_59_7B.txt
+python eval.py --model /root/lshu/SkyThought/ckpt/global_step_159 --evals=aime,math500,amc23,olympiadbench --tp=4 --temperatures 0 --output_file=results_step_159_7B.txt
+python eval.py --model /root/lshu/SkyThought/ckpt/global_step_119 --evals=aime,math500,amc23,olympiadbench --tp=4 --temperatures 0  --output_file=results_step_119_7B.txt
+python eval.py --model /root/lshu/SkyThought/ckpt/global_step_179 --evals=aime,math500,amc23,olympiadbench --tp=4 --temperatures 0  --output_file=results_step_179_7B.txt
